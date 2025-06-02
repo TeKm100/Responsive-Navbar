@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Nav Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="img">
+      <img src="Images/Logo.jpg" alt="Logo">
+      <span>Tekm</span>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links " id="nav-Links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("nav-links");
+        if (nav.classList.contains("active")) {
+          nav.classList.remove("active");
+        }
+          else {
+            nav.classList.add("active");
+          }
+        }
+      
+    </script>
+
+  </nav>
+</body>
+</html>
