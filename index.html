@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Nav Bar</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TeKm Flowers | Expert Gardener</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <img src="Images/Logo.jpg" alt="Logo">
-      <span>TeKm</span>
+      <img src="Images/Logo.jpg" alt="TeKm Logo" />
+      <span>TeKm Flowers</span>
     </div>
 
     <div class="menu-icon" onclick="toggleMenu()">
@@ -20,8 +21,93 @@
       <div class="bar"></div>
     </div>
 
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
+  <hr>
 
+  <!-- Feature Image -->
+  <section class="About">
+    <img src="Images/flowers1.jpg" alt="Main Flower Display" />
+    <p>TeKm's Flower Gardening Operations</p>
+  </section>
+
+  <hr>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-text">
+      <h2>A Passionate Gardener at Your Service</h2>
+      <p>
+        With over 15 years of hands-on gardening experience, I’ve turned a simple love for flowers into a full-blown craft.
+        From nurturing delicate rose stems to growing vibrant sunflowers from seed, my journey as a gardener is rooted in patience and a deep respect for nature.
+      </p>
+      <p>
+        I’ve mastered flower planting techniques—whether by stem, seed, bulb, or propagation—while adapting to various climates and soil types.
+        My services bring color and life to homes, events, and workspaces alike.
+      </p>
+      <p>
+        Whether it's a vibrant bouquet for a wedding, a calm floral layout for your home, or seasonal planting for your estate, I offer contract-based services built on experience, reliability, and creativity.
+      </p>
+      <p>
+        Let's grow something beautiful together 🌿
+      </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="products">
+    <div class="flower-card">
+      <img src="Images/flowers2.jpg" alt="Sunflowers" />
+      <p>Sunflowers – Brighten any space with joy.</p>
+    </div>
+    <div class="flower-card">
+      <img src="Images/flowers3.jpg" alt="Lilies" />
+      <p>Lilies – Elegant and calming for special moments.</p>
+    </div>
+    <div class="flower-card">
+      <img src="Images/flowers4.jpg" alt="Orchids" />
+      <p>Orchids – A touch of class and grace.</p>
+    </div>
+    <div class="flower-card">
+      <img src="Images/flowers5.jpg" alt="Tulips" />
+      <p>Tulips – Symbol of love and spring freshness.</p>
+    </div>
+    <div class="flower-card">
+      <img src="Images/flowers6.jpg" alt="Daisies" />
+      <p>Daisies – Cheerful and simple, perfect for gifts.</p>
+    </div>
+    <div class="flower-card">
+      <img src="Images/flowers7.jpg" alt="Roses" />
+      <p>Roses – Classic beauty for every occasion.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h4><strong>Contact</strong></h4>
+    <p>If you are impressed by our services, feel free to contact us at: 
+      <a href="tel:+2348108826700">Speak with Tolulope</a>
+    </p>
+    <hr />
+    <p>© 2025 TeKm Flowers. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
