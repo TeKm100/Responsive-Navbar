@@ -2,14 +2,16 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #1ab92f;
   color: #333;
 }
+
+
 
 hr {
   border: none;
   border-top: 1px solid #ddd;
-  margin: 30px 0;
+  margin: 30px 20px;
 }
 
 /* Navbar */
@@ -18,7 +20,8 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #222;
+  height: 20px;
+  background-color: #38683f;
   position: relative;
   z-index: 1000;
 }
@@ -40,6 +43,7 @@ hr {
   color: white;
   font-size: 22px;
   font-weight: bold;
+  font-family: jokerman;
 }
 
 .nav-links {
@@ -49,14 +53,14 @@ hr {
 }
 
 .nav-links li a {
-  color: #f1f1f1;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #ffcc70;
+  color: gray;
 }
 
 /* Hamburger Menu */
@@ -67,33 +71,50 @@ hr {
 }
 
 .menu-icon .bar {
-  width: 25px;
-  height: 3px;
+  width: 20px;
+  height: 1px;
   background-color: #fff;
   margin: 4px 0;
   border-radius: 2px;
 }
 
-/* About Highlight Image */
+/* Feature Image with Overlay Text */
 .About {
   text-align: center;
   padding: 20px;
 }
 
-.About img {
+.about-image-container {
+  position: relative;
+  text-align: center;
   width: 90%;
   max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-image-container img {
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
-.About p {
-  margin-top: 12px;
-  font-weight: bold;
-  font-size: 18px;
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  transform: translateX(-10%);
+  color: rgba(252, 252, 252, 0.623);
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: Helvetica ;
 }
 
-/* About Text Section */
+/* About Section */
 .about-section {
   padding: 20px;
   max-width: 900px;
@@ -123,12 +144,17 @@ hr {
 }
 
 .flower-card {
-  background-color: white;
+  background-color: rgb(24, 255, 24);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
   padding-bottom: 10px;
+  
+}
+
+.flower-card:hover {
+  cursor: zoom-in;
 }
 
 .flower-card img {
@@ -170,7 +196,7 @@ footer a:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #333;
+    background-color: #0b9b1e85;
     position: absolute;
     top: 60px;
     right: 20px;
